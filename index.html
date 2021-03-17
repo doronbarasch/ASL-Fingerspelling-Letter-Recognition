@@ -68,15 +68,23 @@ p { margin: 0 0 10px 0; }
   
   <section>
     <p>
-      For this project we decided to take on the task of creating a model that would be able to interpret/translate standard ASL finger spelling letters in real time. <br>
+      Towards the beginning of this project we found that there are, shockingly, essentially no commercially available copmuter-based ASL finger spelling interpreters. Living in a time where accessibility is paramount, we found this upsetting and wanted to make a step towards finding a possible solution. For this project we decided to take on the task of creating a program that would be able to interpret/translate standard ASL finger spelling letters in real time. Such a program requires using the images from video footage and classifying those as letters, which meant that we had to train a model of some sort on images of finger spelling letters in ASL.<br>
       
-      This proved to be rather difficult, requiring us to combine large datasets to create a model that would generalize well and accept, hopefully, as many correct finger letters as possible. As such, we combined all of the images, bar a test set from the second dataset, from three datasets. <br>
+      We initially used a single dataset (the first dataset) to train the model and attempt to classify finger spelling letters in real time. However, the video finger spelling classification proved to be rather difficult, requiring us to combine large datasets to create a model that would generalize well and accept, hopefully, as many correct finger letters as possible. As such, we combined all of the images, bar a test set from the second dataset, from three datasets. <br>
       
       These datasets can be found at the following links: <br>
       
       <a href="https://www.kaggle.com/mrgeislinger/asl-rgb-depth-fingerspelling-spelling-it-out">ASL Fingerspelling Images (RGB & Depth)</a> <br>
       <a href="https://www.kaggle.com/grassknoted/asl-alphabet">ASL Alphabet</a> <br>
       <a href="https://www.kaggle.com/ahmedkhanak1995/sign-language-gesture-images-dataset">Sign Language Gesture Images Dataset</a> <br>
+      
+      To train our model, we made use of an altered version of the convolutional neural network that Professor Redmon made. We additionally used PyTorch to expedite dataset loading, splitting, and training as well as model saving. Using PyTorch, we applied transforms to images in the dataset to ensure that the model would generalize well. This transforms consisted of resizing the dataset images, making the images grayscale, randomly rotating the images slights, randomly changing the perspective of the images, and randomly flipping horizontally. We randomly flipped the images horizontally in order to account for both left- and right-handed signers. <br>
+      
+      We wrote the majority of the code ourselves, referencing Professor Redmon's PyTorch tutorial. <br>
+      
+      The Python files with the code can be found at the <a href="https://github.com/doronbarasch/ASL-Fingerspelling-Letter-Recognition">project repository</a> for this GitHub page. <br>
+      
+      And without further ado, here's the video demonstration and summary of our project.
     </p>
   </section>
  </div>
