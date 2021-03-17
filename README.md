@@ -12,4 +12,4 @@ https://www.kaggle.com/grassknoted/asl-alphabet
 
 https://www.kaggle.com/ahmedkhanak1995/sign-language-gesture-images-dataset
 
-We combined all of the images (minus the test set from the second dataset) to compose the dataset, we some tweaking to ensure better models.
+We combined all of the images (minus the test set from the second dataset) to compose the dataset we used to train neural net 7. We did some tweaking to ensure better models, these will be explained in more depth on the website.
