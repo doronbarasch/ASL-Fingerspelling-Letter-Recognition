@@ -1,4 +1,4 @@
-# ASL-Fingerspelling-Letter-Recognition
+# ASL Fingerspelling Letter Recognition
 
 The website and video for this project can be found at: https://doronbarasch.github.io/ASL-Fingerspelling-Letter-Recognition/
 
