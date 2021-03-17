@@ -89,6 +89,18 @@ p { margin: 0 0 10px 0; }
   <center>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/hVDqKORGtdE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </center>
+  <h3>Problems</h3>
+  <p>
+    <br>
+  One problem we encountered was in generalizing the training/testing performance
+  to our webcam. The model scored very high accuracies with our dataset, but was 
+  substantially more confused when presented with our own hands. In particular, our
+  hands needed to be placed in very specific positions, with very specfic lighting 
+  and backgrounds. The letters M, N, S, and T were difficult to interpret because they
+  are all essentially a matter of thumb placement, and lacked distinguishing features
+  like pointed fingers.
+</p>
+  <h3>Next Steps</h3>
   <p>
    <br> If we were to continue on this project we would likely add hand recognition/hand tracking so that the live interpretation would work against any background. Having the live interpretation work when only a hand is in frame is functional but not optimal. Furthermore, trying to train a model so that the letters that currently don't work or currently aren't implemented would be able to be interpreted. Interpreting J and Z would require making some motion tracking, which would require reworking how the live interpretation works. Furthermore, finding a way to only get a character once and not try to interpret when changing between letters could be a potential way to improve upon the live interpretation.
   </p>
